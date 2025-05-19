@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBot - Your Study Assistant</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">🤖</div>
+            <span>EduBot Assistant</span>
+        </div>
+        <select class="language-selector" id="language-selector">
+            <option value="en-US">English</option>
+        </select>
+    </header>
+
+    <main>
+        <div class="sidebar">
+            <div class="progress-container">
+                <h2>Your Progress</h2>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="streak-counter">
+                    <span>🔥 7 Day Streak</span>
+                </div>
+            </div>
+
+            <div class="upcoming-reminders">
+                <h2>Upcoming Assignments</h2>
+                <ul class="reminder-list">
+                    <li>
+                        <span>Math Assignment</span>
+                        <span class="reminder-date">May 20</span>
+                    </li>
+                    <li>
+                        <span>Physics Lab Report</span>
+                        <span class="reminder-date">May 22</span>
+                    </li>
+                    <li>
+                        <span>Group Project Meeting</span>
+                        <span class="reminder-date">May 24</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="shared-files">
+                <h2>Shared Files</h2>
+                <ul class="reminder-list">
+                    <li>
+                        <span>Project_Notes.pdf</span>
+                        <span class="reminder-date">May 15</span>
+                    </li>
+                    <li>
+                        <span>Chemistry_Review.docx</span>
+                        <span class="reminder-date">May 17</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div>Hi there! I'm EduBot, your educational assistant. How can I help you with your studies today?</div>
+                    <div class="message-time">12:00 PM</div>
+                    <div class="message-actions">
+                        <button class="action-button read-aloud-btn">
+                            <span>🔊</span> Read Aloud
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <textarea 
+                    class="chat-textarea" 
+                    id="chat-input" 
+                    placeholder="Type your message here..."
+                    rows="1"
+                ></textarea>
+                <div class="chat-controls">
+                    <button class="mic-button" id="mic-button">
+                        <span>🎤</span>
+                    </button>
+                    <button class="send-button" id="send-button">
+                        <span>➤</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EduBot Assistant - Abubakar Ibrahim Ibrahim</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
